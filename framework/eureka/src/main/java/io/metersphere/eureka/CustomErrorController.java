@@ -12,6 +12,7 @@ public class CustomErrorController implements ErrorController {
 
     @RequestMapping(ERROR_MAPPING)
     public ResponseEntity<Void> error() {
+        System.out.println("test");
         return ResponseEntity.notFound().build();
     }
 
